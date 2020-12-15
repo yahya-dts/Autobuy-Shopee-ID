@@ -4,6 +4,8 @@
 
 Using Python 3.9 , driven with Selenium and undetected-chromedriver from https://github.com/ultrafunkamsterdam/undetected-chromedriver which is awesome.
 
+My first python project made by myself, and a lil help from youtube and stackoverflow :D.
+
 This project is only for **educational purposes**.
 I'm not responsible for any *causes* by using these codes.
 
