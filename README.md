@@ -1,5 +1,5 @@
 # Autobuy-bot-for-E-Commerce
------
+
 > Tested in Shopee ID.
 
 Using Python 3.9 , driven with Selenium and undetected-chromedriver from https://github.com/ultrafunkamsterdam/undetected-chromedriver which is awesome.
@@ -10,6 +10,8 @@ This project is only for **educational purposes**.
 I'm not responsible for any *causes* by using these codes.
 
 > Read the requirements before using this codes.
+
+-----
 
 To run headless browser, add this code in chrome options attribute : 
 
