@@ -11,8 +11,13 @@ I'm not responsible for any *causes* by using these codes.
 
 To run headless browser, add this code in chrome options attribute : 
 
-`options.headless = True`
-`options.add_argument("--headless")`
+```py
+options.headless = True
+```
+
+```py
+options.add_argument("--headless")`
+```
 
 Step :
   - Clone this repo.
