@@ -16,7 +16,7 @@ options.headless = True
 ```
 
 ```py
-options.add_argument("--headless")`
+options.add_argument("--headless")
 ```
 
 Step :
