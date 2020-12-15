@@ -21,7 +21,7 @@ options.headless = True
 options.add_argument("--headless")
 ```
 
-Step :
+Steps :
   - Clone this repo.
   - Fill your account information such as phone number/email, and a pin number for your payment in account file.
   - Add a proxy/socks5 server is the best options. VPN might be better.
