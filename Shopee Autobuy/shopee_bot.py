@@ -52,28 +52,28 @@ def load_cookies():
 def tombol_beli():
     try:
         beli = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[5]/div/div/button[2]')))
+            By.XPATH, '//*[@id="main"]/div/div[2]/div[2]/div[2]/div[2]/div[3]/div/div[5]/div/div/button[2]')))
         browser.execute_script("arguments[0].click();", beli)
         print("- Barang terbeli!")
         print(datetime.datetime.now().microsecond)
         # iframe = WebDriverWait(browser, 60).until(EC.frame_to_be_available_and_switch_to_it((
         #        By.XPATH, '# //*[@id="main"]/div/div[2]/div[2]')))
         checkout = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button/span')))
+            By.XPATH, '//*[@id="main"]/div/div[2]/div[2]/div[3]/div[2]/div[7]/div[5]/button/span')))
         browser.execute_script("arguments[0].click();", checkout)
         print("- Barang tercheckout!")
         print(datetime.datetime.now().microsecond)
         pesanan = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="main"]/div/div[2]/div[3]/div[4]/div[2]/div[7]/button')))
+            By.XPATH, '//*[@id="main"]/div/div[2]/div[3]/div[4]/div[2]/div[7]/button')))
         browser.execute_script("arguments[0].click();", pesanan)
         print("- Barang terpesan!")
         print(datetime.datetime.now().microsecond)
         bayar = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((
-                By.ID, 'pay-button'))).click()
+            By.ID, 'pay-button'))).click()
         browser.execute_script("arguments[0].click();", bayar)
         print("- Barang terbayar!")
         pin_shopee = WebDriverWait(browser, 60).until(EC.element_to_be_clickable((
-                By.XPATH, '//*[@id="pin-popup"]/div[1]/div[3]/div[1]')))
+            By.XPATH, '//*[@id="pin-popup"]/div[1]/div[3]/div[1]')))
         browser.execute_script("arguments[0].click();", pin_shopee)
         pin_shopee.send_keys(ac.pin_number)
     except NoSuchElementException as e:
