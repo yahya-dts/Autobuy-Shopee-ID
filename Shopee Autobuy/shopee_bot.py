@@ -15,9 +15,15 @@ from fake_useragent import UserAgent
 UC.TARGET_VERSION = 87 # You can change your chrome version target
 
 options = UC.ChromeOptions()
-options.headless = False
+hl = input("Headless / Normal")
+if hl == "Headless":
+    options.headless = True
+    options.add_argument("--headless")
+else:
+    options.headless = False
+    options.add_argument("start-maximized")
 # Add proxy to become more invisible
-server = input("Proxy / Socks5 / Nope : ")
+server = input("Proxy / Socks5 / None : ")
 if server.lower == "proxy":
     proxy = input("Masukan proxy : ")
     options.add_argument(f'--proxy-server={proxy}')
