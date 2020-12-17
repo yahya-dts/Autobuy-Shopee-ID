@@ -24,6 +24,7 @@ options.headless = True
 ```py
 options.add_argument("--headless")
 ```
+> Update : Already add the codes above as an options, you can run headless or normal view
 
 Steps :
   - Clone this repo.
