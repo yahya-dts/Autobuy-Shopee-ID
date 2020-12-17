@@ -13,7 +13,14 @@ from selenium.common.exceptions import *
 UC.TARGET_VERSION = 87
 
 options = UC.ChromeOptions()
-options.headless = False
+hl = input("Headless / Normal")
+if hl == "Headless":
+    options.headless = True
+    options.add_argument("--headless")
+else:
+    options.headless = False
+    options.add_argument("start-maximized")
+options.add_argument("disable-extensions")
 # Delete comments below if u want to be more undetected
 # Reminder : not all website can be accessed with fake useragent below, cause its randomly faking the ua. peace <3
 # ua = UserAgent()
