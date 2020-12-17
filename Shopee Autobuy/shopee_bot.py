@@ -93,10 +93,11 @@ def main():
     # Input product link
     link_produk = input("Masukan link produk : ")
     browser.get(link_produk)
+    # Input your flash sale minute
     menit = int(input("Masukan menit untuk memulai beli : "))
 
     # This is my masterpiece logic piece of shit
-    # Ini countdown buat nentuin menit beli 
+    # Ini countdown buat nentuin menit beli
     while minute != menit:
         minute = datetime.datetime.now().minute
 
